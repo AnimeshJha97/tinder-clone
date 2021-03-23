@@ -1,0 +1,33 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 70px;
+    border-bottom: 1px solid #fafafa;
+}
+
+.chat__details {
+    flex : 1;
+    /*So this gives the maximum weight to the class
+    and will take up as much room as it can in the
+    window, which is for the message part*/
+}
+
+/* > gives us the *direct child* of the class*/
+.chat__details > p{
+    color : gray;
+}
+
+.chat__timeStamp {
+    color : lightgray;
+}
+
+.chat__image{
+    margin-right: 20px;
+}
